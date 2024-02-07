@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/16a248b298.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- -----------------header------------------ -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#heaer">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Alsad Klopic</span><br>from Bosnia & Herzegovina</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- ------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me-description">Hey, I'm Alsad Klopic, a self-taught front-end developer. I've mastered HTML, CSS, and JavaScript through online learning,
+                         driven by my dedication to creating sleek and functional websites. I thrive on challenges, from crafting elegant layouts 
+                         to optimizing performance.Believing in the power of collaboration, I'm always eager to learn and contribute to the tech
+                          community. Let's build something amazing together</p>
+                          <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                          </div>
+                          <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML</span><br>Designing website with HTML</li>
+                                <li><span>CSS</span><br>Designing website with CSS</li>
+                                <li><span>JavaScript</span><br>Designing website with JavScript</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>High School</span><br>2015-2019</li>
+                                <li><span>Mechanical Engineering</span><br>2019-2022</li>
+                                <li><span>Self-tought web development</span><br>As I found myself intrested in Front End Development, I started
+                                learning HTML, CSS & JavaScript on my own with Codecademy and Coursera.</li>
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------services------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <P> Craft static websites with HTML and CSS for a clean and structured user experience.
+                        Develop dynamic and interactive web applications using JavaScript, incorporating frameworks like React.</P>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Responsive Design</h2>
+                    <P>Implement responsive design principles using CSS media queries to ensure optimal viewing on various devices and screen sizes.</P>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cubes"></i>
+                    <h2>User Interface (UI) Design</h2>
+                    <P>Design and implement visually appealing user interfaces, utilizing CSS for styling and JavaScript for interactive elements.</P>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------ portfolio ----------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/todo.jpg">
+                    <div class="layer">
+                        <h3>To Do Website</h3>
+                        <p> Presenting a sleek and intuitive to-do list app designed for seamless task management. Stay organized with a clean interface, easy task input, and priority settings.<br></p>
+                            <a href="./To Do List/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Weather.png">
+                    <div class="layer">
+                    <h3>Weather site</h3>
+                        <p> Explore the world of weather effortlessly with this user-friendly app. Get real-time updates, accurate forecasts, and an intuitive interface.<br></p>
+                            <a href="./weather app/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                            
+                </div>
+                <div class="work">
+                    <img src="images/still-pending.png">
+                    <div class="layer">
+                    <h3>Pending</h3>
+                        <p> Still pending a project.<br></p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------------contact-------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>alsad.klopic30@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i>+38761354936</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/alsad.klopic/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/alsadklopic/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/alsad-klopic-96920621b/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> 2024 Alsad. All rights reserved.
+
+                The content on this website is the property of Alsad and is protected by copyright law. Unauthorized use or reproduction of any materials without written consent is strictly prohibited.
+                
+                For inquiries, contact Alsad at alsad.klopic30@gmail.com</p>
+        </div>
+    </div>
+    <!-- -------------------click command for about --------------------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabName) {
+            for (tablink of tablinks){
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <!-- -------------------- contact email script --------------------- -->
+        <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw0wnDYxlkwQ-CQqUcZctF7Pris5G4rhCb0NPH5mgCS4naDu1ulpBDl-rtx5sJXj5GvcQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => {
+            console.error('Error!', error.message)
+            msg.innerHTML = "Error sending message."})
+        })
+      </script>
+</body>
+</html>
